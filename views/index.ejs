@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniProject</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+  <div class="h-screen bg-zinc-900 p-10 text-white flex items-center justify-center">
+    
+    <div class="w-full max-w-md bg-zinc-800 rounded-2xl shadow-lg p-8">
+      <h1 class="text-3xl font-semibold tracking-tight mb-6">Create User</h1>
+      <div class="nav bg-zinc-900">
+      <a class="text-white px-10 " href="/read">Read</a>
+    </div>
+      <form action="/create" method="POST" class="space-y-4">
+        <input 
+          class="w-full px-5 py-2 border border-gray-600 rounded-lg bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          type="text" 
+          placeholder="Name"
+          name="name"
+        >
+        
+        <input 
+          class="w-full px-5 py-2 border border-gray-600 rounded-lg bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          type="email" 
+          placeholder="Email"
+          name="email"
+        >
+        
+        <input 
+          class="w-full px-5 py-2 border border-gray-600 rounded-lg bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          type="text" 
+          placeholder="Image URL"
+          name="imageurl"
+        >
+        
+        <button 
+          type="submit"
+          class="w-full px-5 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg font-medium transition-colors"
+        >
+          Create User
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
