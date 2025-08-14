@@ -28,8 +28,8 @@
 
               <!-- Actions -->
               <div class="flex gap-4">
-                <a href="#" class="text-blue-500 hover:underline">Edit User</a>
-                <a href="/delete/<%= user._id %>" class="text-red-500 hover:underline">Delete User</a>
+                <a href="/edit/<%=user._id%>" class="text-blue-500 hover:underline">Edit User</a>
+                <a href="/delete/<%= user._id %>" onclick="return confirm('Are you sure you want to delete this user?');" class="text-red-500 hover:underline">Delete User</a>
               </div>
             </div>
           </div>
