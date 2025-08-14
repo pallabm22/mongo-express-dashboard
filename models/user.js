@@ -1,7 +1,5 @@
-const mongoose = require('mongoose');
-mongoose.connect(
-  
-);
+const mongoose = require("mongoose");
+mongoose.connect();
 
 const userSchema = mongoose.Schema({
   name: String,
@@ -9,4 +7,4 @@ const userSchema = mongoose.Schema({
   imageurl: String,
 });
 
-module.exports=mongoose.model("user", userSchema);
+module.exports = mongoose.model("user", userSchema);
